@@ -1,1 +1,1 @@
-# dzhdimitrov.github.io
+# Custom built CV with HTML, CSS, JS
