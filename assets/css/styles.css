@@ -946,6 +946,7 @@ i {
   background: #1e1e1f;
   position: relative;
   border-radius: 20px;
+  border: 1px solid #383838;
 }
 .education-wrapper {
   padding: 1.5em;
@@ -1074,6 +1075,7 @@ i {
   background: #1e1e1f;
   position: relative;
   border-radius: 20px;
+  border: 1px solid #383838;
 }
 .experience-wrapper {
   padding: 1.5em;
