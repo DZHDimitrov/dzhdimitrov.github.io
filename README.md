@@ -1,3 +1,3 @@
 # Custom CV
 
-<p>Fully responsive CV. Built with HTML, CSS (Sass), vanilla.js</p>
+<p>Fully responsive CV, built with HTML, CSS (Sass), javascript</p>
