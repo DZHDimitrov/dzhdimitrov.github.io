@@ -1,0 +1,54 @@
+@import '../settings/_settings-main.scss';
+
+.skills {
+    background: $primary-surface;
+    width:100%;
+    border-radius:$primary-radius;
+    border: 1px solid $primary-border;
+    padding:1.8em;
+
+    .skills-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1.5em;
+    }
+
+    img {
+        width:20px;
+    }
+
+    &__box {
+        display:flex;
+        align-items: baseline;
+        border:1px solid $primary-border;
+        padding:1.5em;
+        border-radius: $primary-radius;
+        line-height: 1.7;
+
+        & > * + * {
+            margin-left:1em;
+        }
+
+        &-text {
+            width:100%;
+        }
+
+        li {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+
+            & > * + * {
+                margin-left:.3em;
+            }
+        }
+
+        .technology-details {
+            line-height: 1.6;
+            display:grid;
+            grid-column-gap:.5em;
+            grid-row-gap: 1.5em;
+            grid-template-columns: repeat(auto-fit,10em);
+        }
+    }
+}

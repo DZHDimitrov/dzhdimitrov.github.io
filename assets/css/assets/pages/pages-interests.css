@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Poppins:wght@200;300&display=swap");
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0.5em;
+  margin-bottom: 0.8em;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2.2em;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 2em;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 1.8em;
+  letter-spacing: 1px;
+}
+
+h4 {
+  font-size: 1.6em;
+  letter-spacing: 1px;
+}
+
+h5 {
+  font-size: 1.4em;
+  letter-spacing: 1px;
+}
+
+h6 {
+  font-size: 1.2em;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 1em;
+}
+
+a {
+  font-size: 1.1em;
+}
+
+i {
+  font-size: 1.3em;
+}
+
+.interests {
+  background: #1e1e1f;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid #383838;
+  padding: 1.8em;
+  line-height: 1.7;
+}
+.interests-wrapper {
+  width: 100%;
+}
+.interests-container {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 70%;
+  max-width: 500px;
+}
+.interests-container > * {
+  margin-top: 1em;
+}
+.interests-container i {
+  color: #FFDB6E;
+}
+.interests-box {
+  padding: 2em;
+  border: 1px solid #383838;
+  border-radius: 20px;
+}
+
+/*# sourceMappingURL=pages-interests.css.map */

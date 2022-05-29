@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Poppins:wght@200;300&display=swap");
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0.5em;
+  margin-bottom: 0.8em;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2.2em;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 2em;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 1.8em;
+  letter-spacing: 1px;
+}
+
+h4 {
+  font-size: 1.6em;
+  letter-spacing: 1px;
+}
+
+h5 {
+  font-size: 1.4em;
+  letter-spacing: 1px;
+}
+
+h6 {
+  font-size: 1.2em;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 1em;
+}
+
+a {
+  font-size: 1.1em;
+}
+
+i {
+  font-size: 1.3em;
+}
+
+.skills {
+  background: #1e1e1f;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid #383838;
+  padding: 1.8em;
+}
+.skills .skills-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1.5em;
+}
+.skills img {
+  width: 20px;
+}
+.skills__box {
+  display: flex;
+  align-items: baseline;
+  border: 1px solid #383838;
+  padding: 1.5em;
+  border-radius: 20px;
+  line-height: 1.7;
+}
+.skills__box > * + * {
+  margin-left: 1em;
+}
+.skills__box-text {
+  width: 100%;
+}
+.skills__box li {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.skills__box li > * + * {
+  margin-left: 0.3em;
+}
+.skills__box .technology-details {
+  line-height: 1.6;
+  display: grid;
+  grid-column-gap: 0.5em;
+  grid-row-gap: 1.5em;
+  grid-template-columns: repeat(auto-fit, 10em);
+}
+
+/*# sourceMappingURL=pages-skills.css.map */

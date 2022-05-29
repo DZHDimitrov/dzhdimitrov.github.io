@@ -1,0 +1,37 @@
+@import '../settings/_settings-main.scss';
+
+.interests {
+    background: $primary-surface;
+    width:100%;
+    border-radius:$primary-radius;
+    border: 1px solid $primary-border;
+    padding:1.8em;
+    line-height: 1.7;
+
+    &-wrapper {
+        width:100%;
+    }
+
+    &-container {
+        margin:0 auto;
+        display: flex;
+        flex-flow:row wrap;
+        justify-content: space-around;
+        width:70%;
+        max-width: 500px;
+
+        & > * {
+            margin-top:1em;
+        }
+
+        i {
+            color:$primary-color;
+        }
+    }
+
+    &-box {
+        padding:2em;
+        border: 1px solid $primary-border;
+        border-radius: $primary-radius;
+    }
+}

@@ -1,0 +1,45 @@
+@import '../settings/_settings-main.scss';
+
+.c-navigation {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: 0.5em;
+    opacity: .8;
+    background: $secondary-surface;
+    z-index: 1; 
+
+    @include for-phone-only {
+        padding: .925em 0em;
+    }
+
+    @include for-desktop-up {
+        border-radius:initial;
+        bottom:initial;
+        left:initial;
+        position: absolute;
+        opacity: 1;
+        right: 0;
+        top: 0;
+        padding: 0.925em 2em;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border:solid $primary-border;
+        border-width: 0px 0px 1px 1px;
+    }
+
+    li:hover {
+        cursor: pointer;
+    }
+
+    &>*+* {
+        margin-left: 1.7em;
+    }
+}
+
+.active-nav {
+    border-bottom: 1px solid $primary-color;
+}

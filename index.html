@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="./src/app.js" type="module"></script>
+    <title>Document</title>
+</head>
+<img srcset="" alt="">
+
+<body>
+    <main class="main">
+        <div class="page-wrapper">
+            <aside class="c-sidebar">
+                <button onclick="toggleInfo()" class="show-contacts-button">
+                    <span>Show contacts</span>
+                    <span class="u-display-none">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </span>
+                </button>
+                <section class="c-sidebar__introduction">
+                    <div class="c-sidebar__introduction-image">
+                        <div class="c-sidebar__introduction-image-wrapper">
+                            <img srcset="./assets/images/profile-small.jpg 50w, ./assets/images/profile-medium.jpg 180w"
+                                sizes="(max-width:599px) 40px, 55px" alt="">
+                        </div>
+                    </div>
+                    <div class="c-sidebar__introduction-text">
+                        <h6 class="c-sidebar__introduction-text-name">Daniel Dimitrov</h6>
+                        <span class="c-sidebar__introduction-text-position">.NET Developer</span>
+                    </div>
+                </section>
+                <div class="additional-info u-display-none u-fade-in">
+                    <section class="c-sidebar__personal-information">
+                        <div class="c-sidebar__personal-information-item o-row-container">
+                            <div class="item-icon-wrapper">
+                                <div class="item-icon-container o-row-container o-row-container--center">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                </div>
+                            </div>
+                            <div class="item-text o-column-container">
+                                <span>Birthday</span>
+                                <a>June 21, 1994</a>
+                            </div>
+                        </div>
+                        <div class="c-sidebar__personal-information-item o-row-container">
+                            <div class="item-icon-wrapper">
+                                <div class="item-icon-container o-row-container o-row-container--center">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                            </div>
+                            <div class="item-text o-column-container">
+                                <span>Address</span>
+                                <a>Burgas, Bulgaria</a>
+                            </div>
+                        </div>
+                        <div class="c-sidebar__personal-information-item o-row-container">
+                            <div class="item-icon-wrapper">
+                                <div class="item-icon-container o-row-container o-row-container--center">
+                                    <i class="fa-solid fa-address-card"></i>
+                                </div>
+                            </div>
+                            <div class="item-text o-column-container">
+                                <span>Nationality</span>
+                                <a>Bulgarian</a>
+                            </div>
+                        </div>
+
+                        <div class="c-sidebar__personal-information-item o-row-container">
+                            <div class="item-icon-wrapper">
+                                <div class="item-icon-container o-row-container o-row-container--center">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                            </div>
+                            <div class="item-text o-column-container">
+                                <span>Email</span>
+                                <a>ddreamzdimitrov@gmail.com</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="c-sidebar__social-media">
+                        <a href="https://www.facebook.com/daniel.dimitrov.9615/about">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/daniel-dimitrov-084646226/">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/DZHDimitrov">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </section>
+                </div>
+            </aside>
+            <div class="dynamic-content">
+                <nav>
+                    <ul class="c-navigation o-row-container o-row-container--center">
+                        <li id="skills" class="active-nav">Skills</li>
+                        <li id="education">Education</a></li>
+                        <li id="experience">Experience</a></li>
+                        <li id="interests">Interests</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </main>
+    <script>
+        function toggleInfo() {
+            const infoWrapper = document.querySelector('.additional-info');
+            if (infoWrapper.classList.contains('u-display-block')) {
+                infoWrapper.classList.remove('u-display-block');
+                return;
+            }
+
+            infoWrapper.classList.add('u-display-block');
+        }
+    </script>
+</body>
+
+</html>
