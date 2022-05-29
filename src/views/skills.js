@@ -1,97 +1,88 @@
-import { html } from "../../node_modules/lit-html/lit-html.js";
+import { e } from "../utilities/dom.js";
 
-const skillsTemplate = html`
-  <section class="skills">
-    <h3>Skills</h3>
-    <div class="skills-container u-fade-in">
-      <div class="skills__box">
-        <div class="skills__box-text">
-          <h6>.NET</h6>
-          <hr class="o-separator" />
-          <p>
-            Experience in personal projects only with the following
-            technologies:
-          </p>
-          <ul class="technology-details">
-            <li>
-              <img src="./assets/svgs/mssql.svg" alt="" />
-              <span>MS SQL</span>
-            </li>
-            <li>
-              <img src="./assets/svgs/efcore.svg" alt="" />
-              <span>EF Core</span>
-            </li>
-            <li>
-              <img src="./assets/svgs/aspnet.svg" alt="" />
-              <span>ASP.NET Core</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="skills__box">
-        <div class="skills__box-text">
-          <h6>Front-end</h6>
-          <hr class="o-separator" />
-          <p>
-            Experience in personal projects as well as professional experiece
-            with:
-          </p>
-          <ul class="technology-details">
-            <li>
-              <img src="./assets/svgs/html.svg" alt="" />
-              <span>HTML</span>
-            </li>
-            <li>
-              <img src="./assets/svgs/sass.svg" alt="" />
-              <span>Sass</span>
-            </li>
-            <li>
-              <img src="./assets/svgs/css3.svg" alt="" />
-              <span>CSS</span>
-            </li>
-            <li>
-              <img src="./assets/svgs/js.svg" alt="" />
-              <span>Javascript</span>
-            </li>
-            <li>
-              <img src="./assets/svgs/angular.svg" alt="" />
-              <span>Angular</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="skills__box">
-        <div class="skills__box-text">
-          <h6>Other</h6>
-          <hr class="o-separator" />
-          <p>
-            Experience in personal projects as well as professional experiece
-            with:
-          </p>
-          <ul class="technology-details">
-            <li>
-              <img src="./assets/svgs/mongo.svg" alt="" />
-              <span>MongoDb</span>
-            </li>
-            <li>
-              <img src="./assets/svgs/nodejs.svg" alt="" />
-              <span>Node.js</span>
-            </li>
-            <li>
-              <img src="" alt="" />
-              <span>Express.js</span>
-            </li>
-            <li>
-              <img src="./assets/svgs/typescript.svg" alt="" />
-              <span>Typescript</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-`;
+const skillsTemplate = () => e(
+  'section',{className:'skills'},[
+    e('h3',{},'Skills'),
+    e('div',{className:'skills-container u-fade-in'},[
+      e('div',{className:'skills__box'},[
+        e('div',{className:'skills__box-text'},[
+          e('h6',{},'.NET'),
+          e('hr',{className:'o-separator'},[]),
+          e('p',{},'Experience in personal projects only with the following technologies:'),
+          e('ul',{className:'technology-details'},[
+            e('li',{},[
+              e('img',{src:'./assets/svgs/mssql.svg'},[]),
+              e('span',{},'MS SQL')
+            ]),
+            e('li',{},[
+              e('img',{src:'./assets/svgs/efcore.svg'},[]),
+              e('span',{},'EF Core')
+            ]),
+            e('li',{},[
+              e('img',{src:'./assets/svgs/aspnet.svg'},[]),
+              e('span',{},'ASP.NET Core')
+            ]),
+          ])
+        ])
+      ]),
+      e('div',{className:'skills__box'},[
+        e('div',{className:'skills__box-text'},[
+          e('h6',{},'Front-end'),
+          e('hr',{className:'o-separator'},[]),
+          e('p',{},'Experience in personal projects as well as professional experiece with:'),
+          e('ul',{className:'technology-details'},[
+            e('li',{},[
+              e('img',{src:'./assets/svgs/html.svg'},[]),
+              e('span',{},'HTML')
+            ]),
+            e('li',{},[
+              e('img',{src:'./assets/svgs/sass.svg'},[]),
+              e('span',{},'Sass')
+            ]),
+            e('li',{},[
+              e('img',{src:'./assets/svgs/css3.svg'},[]),
+              e('span',{},'CSS')
+            ]),
+            e('li',{},[
+              e('img',{src:'./assets/svgs/js.svg'},[]),
+              e('span',{},'Javascript')
+            ]),
+            e('li',{},[
+              e('img',{src:'./assets/svgs/angular.svg'},[]),
+              e('span',{},'Angular')
+            ]),
+          ])
+        ])
+      ]),
+      e('div',{className:'skills__box'},[
+        e('div',{className:'skills__box-text'},[
+          e('h6',{},'Other'),
+          e('hr',{className:'o-separator'},[]),
+          e('p',{},'Experience in personal projects as well as professional experiece with:'),
+          e('ul',{className:'technology-details'},[
+            e('li',{},[
+              e('img',{src:'./assets/svgs/mongo.svg'},[]),
+              e('span',{},'MongoDb')
+            ]),
+            e('li',{},[
+              e('img',{src:'./assets/svgs/nodejs.svg'},[]),
+              e('span',{},'Node.js')
+            ]),
+            e('li',{},[
+              e('img',{},[]),
+              e('span',{},'Express.js')
+            ]),
+            e('li',{},[
+              e('img',{src:'./assets/svgs/typescript.svg'},[]),
+              e('span',{},'Typescript')
+            ]),
+          ])
+        ])
+      ])
+    ])
+  ]
+);
 
 export async function skillsPage(render) {
-  render(skillsTemplate);
+  render(skillsTemplate());
 }

@@ -76,6 +76,7 @@ i {
   justify-content: center;
   width: fit-content;
   display: inline-flex;
+  margin-right: 1.2em;
 }
 .experience-wrapper h5 i {
   color: #FFDB6E;

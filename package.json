@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "lit": "^2.2.5",
     "sass": "^1.52.1"
   },
   "devDependencies": {},

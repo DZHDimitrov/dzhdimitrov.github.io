@@ -1,5 +1,3 @@
-import { render } from "../node_modules/lit-html/lit-html.js";
-
 import { skillsPage } from "./views/skills.js";
 import { educationPage } from "./views/education.js";
 import { experiencePage } from "./views/experience.js";
@@ -9,7 +7,7 @@ import { varToString } from "./utilities/format.js";
 
 const containerToRender = document.querySelector(".dynamic-content");
 const renderFunction = (template) => {
-  render(template, containerToRender);
+  containerToRender.appendChild(template);
 };
 
 const skills = document.getElementById("skills");
@@ -25,7 +23,7 @@ function setLinks(...allPages) {
   allPages.forEach((el) => {
     if (el.id == "skills") {
       const skillsPage = pages.get("skills" + "Page");
-      skillsPage(renderFunction);  
+      skillsPage(renderFunction);
     }
 
     el.addEventListener("click", (e) => {
@@ -40,7 +38,6 @@ function setLinks(...allPages) {
 
       const pageName = el.id;
       const func = pages.get(pageName + "Page");
-
       if (func) {
         if (removeSection(containerToRender, pageName)) {
           func(renderFunction);
@@ -58,14 +55,14 @@ function clearNavLinks(links) {
   });
 }
 
-function removeSection(container, id) {
-  const section = container.getElementsByTagName("section")[0];
-
+function removeSection(id) {
+  const section = containerToRender.lastChild;
+  
   if (section.classList.contains(id)) {
     return false;
   }
-
-  section.remove();
+  
+  containerToRender.removeChild(section);
 
   return true;
 }
