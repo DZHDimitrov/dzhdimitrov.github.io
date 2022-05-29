@@ -1,2 +1,2 @@
-# Responsive CV
-<p>Custom-built CV with HTML, CSS, JS</p>
+# CV
+<p>Custom-built, responsive CV with HTML, CSS, JS</p>
