@@ -16,7 +16,7 @@ const experienceTemplate = () =>
           e(
             "p",
             { className: "u-clear-margin" },
-            "Working as junior-web developer on back-end as well as on front-end on projects of a different nature.The main technologies are Node.js, MongoDb, Express.js, Angular"
+            "Working as a junior-web developer on back-end and front-end on projects of a different nature.The main technologies are Node.js, MongoDb, Express.js, Angular."
           ),
         ]),
         e("article", {}, [
@@ -25,7 +25,7 @@ const experienceTemplate = () =>
           e(
             "p",
             { className: "u-clear-margin" },
-            "Being sales agent and responsible for maintaining a deep understanding of marketplace trends and competitor activity. Carrying out intense and detailed negotiations with clients."
+            "Being a sales agent and responsible for maintaining a deep understanding of marketplace trends and competitor activity. Carrying out intense and detailed negotiations with clients."
           ),
         ]),
         e("article", {}, [
@@ -34,7 +34,7 @@ const experienceTemplate = () =>
           e(
             "p",
             { className: "u-clear-margin" },
-            "Working as junior inspector. I was answering and helping clients with enquiries associated with internal and external transport. Furthermore, I was accepting,issuing and verifying licenses of drivers or annual technical inspections."
+            "Working as a junior inspector. I was answering and helping clients with enquiries associated with internal and external transport. Furthermore, I was accepting,issuing and verifying licenses of drivers or annual technical inspections."
           ),
         ]),
         e("article", {}, [

@@ -11,8 +11,8 @@ const skillsTemplate = () => e(
           e('p',{},'Experience in personal projects only with the following technologies:'),
           e('ul',{className:'technology-details'},[
             e('li',{},[
-              e('img',{src:'./assets/svgs/mssql.svg'},[]),
-              e('span',{},'MS SQL')
+              e('img',{src:'./assets/svgs/csharp.svg'},[]),
+              e('span',{},'C#')
             ]),
             e('li',{},[
               e('img',{src:'./assets/svgs/efcore.svg'},[]),
@@ -21,6 +21,23 @@ const skillsTemplate = () => e(
             e('li',{},[
               e('img',{src:'./assets/svgs/aspnet.svg'},[]),
               e('span',{},'ASP.NET Core')
+            ]),
+          ])
+        ])
+      ]),
+      e('div',{className:'skills__box'},[
+        e('div',{className:'skills__box-text'},[
+          e('h6',{},'Databases'),
+          e('hr',{className:'o-separator'},[]),
+          e('p',{},'Experience in personal projects as well as professional experiece with:'),
+          e('ul',{className:'technology-details'},[
+            e('li',{},[
+              e('img',{src:'./assets/svgs/mssql.svg'},[]),
+              e('span',{},'MS SQL')
+            ]),
+            e('li',{},[
+              e('img',{src:'./assets/svgs/mongo.svg'},[]),
+              e('span',{},'MongoDb')
             ]),
           ])
         ])
@@ -36,12 +53,12 @@ const skillsTemplate = () => e(
               e('span',{},'HTML')
             ]),
             e('li',{},[
-              e('img',{src:'./assets/svgs/sass.svg'},[]),
-              e('span',{},'Sass')
-            ]),
-            e('li',{},[
               e('img',{src:'./assets/svgs/css3.svg'},[]),
               e('span',{},'CSS')
+            ]),
+            e('li',{},[
+              e('img',{src:'./assets/svgs/sass.svg'},[]),
+              e('span',{},'Sass')
             ]),
             e('li',{},[
               e('img',{src:'./assets/svgs/js.svg'},[]),
@@ -60,10 +77,6 @@ const skillsTemplate = () => e(
           e('hr',{className:'o-separator'},[]),
           e('p',{},'Experience in personal projects as well as professional experiece with:'),
           e('ul',{className:'technology-details'},[
-            e('li',{},[
-              e('img',{src:'./assets/svgs/mongo.svg'},[]),
-              e('span',{},'MongoDb')
-            ]),
             e('li',{},[
               e('img',{src:'./assets/svgs/nodejs.svg'},[]),
               e('span',{},'Node.js')
