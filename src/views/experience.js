@@ -12,7 +12,7 @@ const experienceTemplate = () =>
       e("div", { className: "education-timeline" }, [
         e("article", {}, [
           e("h6", { className: "u-clear-margin" }, "2N Soft"),
-          e("p", {}, "2021 - Present"),
+          e("p", {}, "2021 - 2022"),
           e(
             "p",
             { className: "u-clear-margin" },
