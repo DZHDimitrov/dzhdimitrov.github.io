@@ -38,7 +38,7 @@ const experienceTemplate = () =>
           ),
         ]),
         e("article", {}, [
-          e("h6", { className: "u-clear-margin" }, "Properties Management"),
+          e("h6", { className: "u-clear-margin" }, "Fairplay Properties Management"),
           e("p", {}, "2015 - 2018"),
           e(
             "p",
